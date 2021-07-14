@@ -1,4 +1,4 @@
-package baek_1stage;
+package back_1stage;
 
 public class part1 {
 	public static void main(String[] args) {
