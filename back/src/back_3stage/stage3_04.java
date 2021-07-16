@@ -8,7 +8,7 @@ public class stage3_04 {
 		
 		Scanner sc = new Scanner(System.in);
 		
-		
+		// 효율성
 		int num = sc.nextInt();
 		int[] array = new int[num];
 		
