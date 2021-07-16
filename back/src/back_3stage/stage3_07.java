@@ -8,7 +8,7 @@ public class stage3_07 {
 		
 		Scanner sc = new Scanner(System.in);
 		
-		
+		//
 		int num = sc.nextInt();
 
 		int[] array = new int[num];
