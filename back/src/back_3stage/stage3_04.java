@@ -1,30 +1,35 @@
 package back_3stage;
 
-import java.util.Scanner;
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
+import java.util.StringTokenizer;
 
 public class stage3_04 {
 	
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
 		
-		Scanner sc = new Scanner(System.in);
+		BufferedReader input = new BufferedReader(new InputStreamReader(System.in));
+		BufferedWriter output = new BufferedWriter(new OutputStreamWriter(System.out));
 		
-		// 효율성
-		int num = sc.nextInt();
-		int[] array = new int[num];
+		int num = Integer.parseInt(input.readLine());
+		System.out.println(num);
+		
+		StringTokenizer st;
+		
 		
 		for (int i = 0; i < num; i++) {
-			int a = sc.nextInt();
-			int b = sc.nextInt();
-			
-			array[i] = a+b; 
-		}
-		for (int i = 0; i < array.length; i++) {
-			System.out.println(array[i]);
+			st = new StringTokenizer(input.readLine()," ");
+			output.write(Integer.parseInt(st.nextToken()) + Integer.parseInt(st.nextToken()) + "\n");
 		}
 		
+		input.close();
 		
+		output.flush();
+		output.close();
 		
-		sc.close();
 	}
 
 }
