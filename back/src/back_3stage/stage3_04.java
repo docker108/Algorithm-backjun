@@ -15,7 +15,6 @@ public class stage3_04 {
 		BufferedWriter output = new BufferedWriter(new OutputStreamWriter(System.out));
 		
 		int num = Integer.parseInt(input.readLine());
-		System.out.println(num);
 		
 		StringTokenizer st;
 		
