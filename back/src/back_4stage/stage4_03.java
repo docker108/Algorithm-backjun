@@ -21,6 +21,7 @@ public class stage4_03 {
 				break;
 			}
 		}
+		sc.close();
 		System.out.println(cnt);
 	}
 
