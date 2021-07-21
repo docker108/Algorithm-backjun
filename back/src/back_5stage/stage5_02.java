@@ -1,36 +1,30 @@
 package back_5stage;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
+import java.util.Scanner;
 
 public class stage5_02 {
 	
-	public static void main(String[] args) throws IOException {
+	public static void main(String[] args) { 
+		Scanner sc =new Scanner(System.in); 
+		int [] arr =new int[9]; 
+		int max=0; 
+		int cnt=0;
 		
+		for(int i=0;i<9;i++) { 
+			arr[i]=sc.nextInt(); 
+		} 
 		
-		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		for(int i=0; i<9;i++) {
+			if(arr[i]>max) {
+				max=arr[i]; cnt=i+1; 
+			} 
+		} 
+		System.out.println(max); 
+		System.out.println(cnt); 
 		
-		int array[] = new int[9];
-		int cnt = 0;
+		sc.close();
 		
-		
-		for (int i = 0; i < array.length; i++) {
-			array[i] = Integer.parseInt(br.readLine());
-		}
-		
-		int MAX = array[0];
-		
-		for (int i = 0; i < array.length; i++) {
-			if(MAX < array[i]) {
-				MAX = array[i];
-				cnt = i+1;
-			}
-		}
-		System.out.println(MAX);
-		System.out.println(cnt);
-		
-		
-	}
-
+	} 
+	
 }
+
