@@ -30,6 +30,8 @@ public class stage4_01 {
 				break;
 			}
 			
+			System.out.println(st);
+			
 			bw.write(Integer.parseInt(st.nextToken()) + Integer.parseInt(st.nextToken()) + "\n");
 		}
 		
